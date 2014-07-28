@@ -15,7 +15,9 @@ def add_parcel
   parcel_weight = gets.chomp
   @parcel_list << Parcel.new(parcel_height, parcel_width, parcel_length, parcel_weight, parcel_name)
   puts "#{parcel_name} has been added.\n"
+  puts "Shipping cost: #{@parcel_list[-1].cost_to_ship}"
 end
 
-add_parcel()
-p @parcel_list
+
+
+

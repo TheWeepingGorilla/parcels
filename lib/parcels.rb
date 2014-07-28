@@ -1,9 +1,9 @@
 class Parcel
   def initialize(height, width, length, weight, name)
-  @height = height
-  @width = width
-  @length = length
-  @weight = weight
+  @height = height.to_i
+  @width = width.to_i
+  @length = length.to_i
+  @weight = weight.to_i
   @name = name
   end
 
