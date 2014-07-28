@@ -1,11 +1,11 @@
 class Parcel
-  def initialize(height, width, length, weight)
+  def initialize(height, width, length, weight, name)
   @height = height
   @width = width
   @length = length
   @weight = weight
+  @name = name
   end
-
 
   def height
     @height
@@ -23,6 +23,10 @@ class Parcel
     @weight
   end
 
+  def name
+    @name
+  end
+
   def volume
     @height * @width * @length
   end
@@ -31,3 +35,5 @@ class Parcel
     self.volume / @weight
   end
 end
+
+

@@ -18,7 +18,6 @@ describe "Parcels" do
     xmas = Parcel.new(10,4,7,20)
     xmas.cost_to_ship.should eq(14)
   end
-
 end
 
 
